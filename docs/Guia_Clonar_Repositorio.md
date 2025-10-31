@@ -8,7 +8,7 @@ Este documento descreve o procedimento para clonar o repositório, criar branche
 
 **Caminho de destino recomendado:**  
 ```
-Defina uma pasta para 
+Defina uma pasta/ local para ter repositorio locamente
 ```
 
 ### Passo a passo:
