@@ -1,111 +1,69 @@
-# 🗓️ **Planejamento Geral — Projeto Sistema de Doações**
+##  **Cronograma Atualizado — Projeto Sistema de Doações**
 
-## 🎯 **Visão Geral**
-O projeto será desenvolvido em **4 sprints semanais**, totalizando **1 mês de execução**.  
-Cada sprint possui entregas específicas, responsáveis definidos e critérios de aceitação claros.  
-O fluxo de versionamento segue o modelo **feature → develop → main**, com **Pull Requests obrigatórios**.
+### **Sprint 1 – Configuração e Preparação do Ambiente (24/10 a 30/10)**
 
----
+**Objetivo:** Estruturar o projeto e configurar todo o ambiente de desenvolvimento.
 
-## 🧩 **Sprint 1 — Estrutura e Documentação Inicial**
-📅 **Período:** 01/11 a 07/11  
-🎯 **Objetivo:** Criar e estruturar o repositório, definir regras de versionamento e subir a documentação base do projeto.
+**Atividades:**
 
-### **Entregas**
-| Código | Entrega | Descrição | Responsáveis | Branch | Status |
-|--------|----------|------------|---------------|---------|---------|
-| DOC01 | Requisitos e Regras de Negócio | Documento com RFs, RNFs e histórias de usuário | Fernanda, Carlos | `feature/docs-requisitos` | ⏳ |
-| DOC02 | Estrutura de Repositório | Criação de pastas principais e `.gitignore` | Ariane, Carlos | `feature/estrutura-inicial` | ⏳ |
-| DOC03 | Protótipo de Telas | Protótipo do fluxo doador/ONG | Fernanda | `feature/docs-prototipo` | ⏳ |
-| DOC04 | Guia de Versionamento e Clone | Instruções de Pull Request e configuração inicial | Ariane | `feature/docs-planejamento-sprints` | ✅ |
-| DOC05 | Planejamento das Sprints | Cronograma e responsabilidades | Ariane, Vilela | `feature/docs-planejamento-sprints` | ✅ |
+* Criação do repositório e estrutura de pastas (`front`, `back`, `docs`, `banco`, etc.)
+* Configuração de regras de versionamento e branches (`develop`, `feature/...`)
+* Definição de PR templates e regras de merge
+* Implementação de Ruleset, CODEOWNERS e proteções de branch
+* Teste de fluxo de PRs (feature → develop)
+* Documentação inicial do processo no README
+
+**Entregável:**
+Ambiente de desenvolvimento configurado e repositório padronizado com controle de versionamento ativo.
 
 ---
 
-## ⚙️ **Sprint 2 — Implementação de Cadastros e Login**
-📅 **Período:** 08/11 a 14/11  
-🎯 **Objetivo:** Implementar os módulos de **Usuário e ONG**, com login e autenticação básica.
+### **Sprint 2 – Início da Codificação (31/10 a 06/11)**
 
-### **Entregas**
-| Código | Entrega | Descrição | Responsáveis | Branch | Status |
-|--------|----------|------------|---------------|---------|---------|
-| RF01 | Cadastro de Usuário | CRUD de usuários com autenticação | Ariane, Carlos | `feature/backend-usuario` | ⏳ |
-| RF02 | Cadastro de ONGs | CRUD com validação de CNPJ | Antonio, Gabriel Rosa | `feature/backend-ong` | ⏳ |
-| RF03 | Banco de Dados Inicial | Estrutura SQL de usuários e ONGs | Antonio, Gabriel Rosa | `feature/database-inicial` | ⏳ |
-| RF04 | Tela de Login e Cadastro | Interfaces conectadas ao backend | Juan, Rafaell, Fernanda | `feature/frontend-login-cadastro` | ⏳ |
+**Objetivo:** Iniciar a implementação das funcionalidades principais do sistema.
 
----
+**Atividades:**
 
-## 💬 **Sprint 3 — Módulo de Itens e Submissão**
-📅 **Período:** 15/11 a 21/11  
-🎯 **Objetivo:** Implementar o cadastro de itens, upload de fotos e submissão para análise das ONGs.
+* Desenvolvimento da base do **back-end** (rotas, conexão inicial ao banco, APIs básicas)
+* Estrutura inicial do **front-end** (layouts, login e cadastro)
+* Criação do modelo de dados e entidades principais
+* Testes iniciais de integração entre front e back
+* Atualização do documento de requisitos com o progresso técnico
 
-### **Entregas**
-| Código | Entrega | Descrição | Responsáveis | Branch | Status |
-|--------|----------|------------|---------------|---------|---------|
-| RF05 | CRUD de Itens | Cadastro e edição de itens com fotos | Ariane, Carlos | `feature/backend-itens` | ⏳ |
-| RF06 | Upload de Fotos | Upload, visualização e exclusão | Carlos, Vilela | `feature/backend-fotos` | ⏳ |
-| RF07 | Submissão de Itens | Fluxo de envio para ONGs | Juan, Rafaell | `feature/frontend-submissao` | ⏳ |
-| RF08 | Interface de Análise | Tela para ONGs aceitarem ou recusarem | Fernanda | `feature/frontend-analise` | ⏳ |
+**Entregável:**
+Protótipo funcional inicial com login e cadastro funcionando de ponta a ponta.
 
 ---
 
-## 🔗 **Sprint 4 — Integração e Entrega Final**
-📅 **Período:** 22/11 a 28/11  
-🎯 **Objetivo:** Integrar todos os módulos, testar o sistema e gerar o relatório final.
+### **Sprint 3 – Implementação das Funcionalidades (07/11 a 13/11)**
 
-### **Entregas**
-| Código | Entrega | Descrição | Responsáveis | Branch | Status |
-|--------|----------|------------|---------------|---------|---------|
-| RF09 | Integração Final | Comunicação entre front, back e banco | Ariane, Antonio | `feature/integracao-final` | ⏳ |
-| RF10 | Chat por Doação | Canal de conversa doador ↔ ONG | Carlos, Vilela | `feature/backend-chat` | ⏳ |
-| RF11 | Relatório de Auditoria | Registro das decisões das ONGs | Gabriel Rosa | `feature/backend-auditoria` | ⏳ |
-| RF12 | Testes e Deploy Local | Teste completo e validação final | Todos | `release/v1.0` | ⏳ |
-| DOC08 | Relatório Final | Consolidado da execução e resultados | Ariane, Vilela | `feature/docs-relatorio-final` | ⏳ |
+**Objetivo:** Ampliar as funcionalidades do sistema com foco nas operações CRUD e validações.
 
----
+**Atividades:**
 
-## 🧭 **Critérios de Conclusão**
-Uma sprint será considerada **concluída** quando:
-1. Todas as tarefas da sprint estiverem versionadas na branch `develop`;
-2. Todos os PRs forem revisados e aprovados;
-3. O relatório da sprint estiver adicionado em `docs/`;
-4. As issues forem fechadas no GitHub.
+* CRUD completo de usuários, ONGs e doações
+* Validações de campos e mensagens de erro
+* Design e navegação entre telas
+* Testes de fluxo completo de doação
+* Revisão dos diagramas e requisitos atualizados
+
+**Entregável:**
+Versão estável com todas as operações básicas e fluxo de doação testado.
 
 ---
 
-## 🧠 **Responsabilidades Gerais**
-| Função | Integrantes | Responsabilidades |
-|---------|--------------|-------------------|
-| **Gerência de Projeto** | Ariane, Vilela | Planejamento, cronograma e aprovação de PRs |
-| **Front-End** | Juan, Rafaell, Fernanda | Interfaces e integração com o backend |
-| **Back-End** | Ariane, Carlos, Vilela | APIs e lógica de negócio |
-| **Banco de Dados** | Antonio, Gabriel Rosa | Estrutura, chaves e relacionamentos |
-| **Documentação** | Ariane, Fernanda | Requisitos, relatórios e guias técnicos |
+### ✅ **Sprint 4 – Finalização e Apresentação (14/11 a 20/11)**
 
----
+**Objetivo:** Refinar, revisar e preparar a entrega final do projeto.
 
-## 🔄 **Fluxo de Versionamento**
-```bash
-git checkout develop
-git pull origin develop
-git checkout -b feature/nome-da-tarefa
-# faz alterações
-git add .
-git commit -m "feat: descrição breve da tarefa"
-git push origin feature/nome-da-tarefa
-# cria PR para develop
-```
+**Atividades:**
 
----
+* Testes finais e correção de bugs
+* Revisão de documentação técnica (README, diagramas e requisitos)
+* Ajustes visuais e usabilidade
+* Preparação do pitch/apresentação
+* Publicação final (deploy ou gravação de vídeo de demonstração)
 
-## ✅ **Encerramento do Projeto**
-Ao final da **Sprint 4**, será gerado o **Relatório Final (DOC08)** contendo:
-- Resultados alcançados;  
-- Lições aprendidas;  
-- Melhorias propostas para versões futuras.
+**Entregável:**
+Versão final do sistema pronta para entrega e demonstração.
 
----
-
-📅 **Gerentes Responsáveis:** @Ariane, @Vilela  
-🧠 **Controle de Sprints e Revisões:** via Issues e Pull Requests no GitHub.
