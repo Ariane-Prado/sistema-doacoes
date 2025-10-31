@@ -1,0 +1,4 @@
+# -------------------------------------------------------------------
+# Este arquivo é somente uma ferramenta usada para criação da pasta 
+# do projeto, não será utilizado para nenhum outro fim dentro do projeto
+# -------------------------------------------------------------------
