@@ -8,22 +8,22 @@ O fluxo de versionamento segue o modelo **feature → develop → main**, com **
 ---
 
 ## 🧩 **Sprint 1 — Estrutura e Documentação Inicial**
-📅 **Período:** 01/11 a 07/11  
+📅 **Período:** 30/11 a 31/11  
 🎯 **Objetivo:** Criar e estruturar o repositório, definir regras de versionamento e subir a documentação base do projeto.
 
 ### **Entregas**
 | Código | Entrega | Descrição | Responsáveis | Branch | Status |
 |--------|----------|------------|---------------|---------|---------|
 | DOC01 | Requisitos e Regras de Negócio | Documento com RFs, RNFs e histórias de usuário | Fernanda, Carlos | `feature/docs-requisitos` | ⏳ |
-| DOC02 | Estrutura de Repositório | Criação de pastas principais e `.gitignore` | Ariane, Carlos | `feature/estrutura-inicial` | ⏳ |
+| DOC02 | Estrutura de Repositório | Criação de pastas principais e `.gitignore` | Ariane, Vilela | `feature/estrutura-inicial` | ⏳ |
 | DOC03 | Protótipo de Telas | Protótipo do fluxo doador/ONG | Fernanda | `feature/docs-prototipo` | ⏳ |
-| DOC04 | Guia de Versionamento e Clone | Instruções de Pull Request e configuração inicial | Ariane | `feature/docs-planejamento-sprints` | ✅ |
+| DOC04 | Guia de Versionamento e Clone | Instruções de Pull Request e configuração inicial | Ariane, Vilela | `feature/docs-planejamento-sprints` | ✅ |
 | DOC05 | Planejamento das Sprints | Cronograma e responsabilidades | Ariane, Vilela | `feature/docs-planejamento-sprints` | ✅ |
 
 ---
 
 ## ⚙️ **Sprint 2 — Implementação de Cadastros e Login**
-📅 **Período:** 08/11 a 14/11  
+📅 **Período:** 31/10 a 07/11  
 🎯 **Objetivo:** Implementar os módulos de **Usuário e ONG**, com login e autenticação básica.
 
 ### **Entregas**
