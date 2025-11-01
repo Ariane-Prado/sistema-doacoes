@@ -1,6 +1,6 @@
 # 📋 Documento de Requisitos Funcionais – Sistema de Doações
 
----
+--
 
 ## RF01 — Gestão de Usuários e Acesso
 
