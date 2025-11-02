@@ -8,7 +8,6 @@
     margin: 0;
 }
 
-
 .container {
     background: #fff;
     padding: 40px;
@@ -94,12 +93,10 @@
    
 }
 
-
 .recall-forget a:hover, .signup-link p a:hover{
     text-decoration: underline;
     
 }
-
 
 .container button {
     width: 100%;
@@ -115,6 +112,12 @@
     margin-bottom: 15px;
 }
 
+.error {
+  color: #d32f2f;
+  font-size: 0.9rem;
+  margin: 8px 0 4px;
+}
+button[disabled] { opacity: .6; cursor: not-allowed; }
 
 
 
