@@ -1,3 +1,18 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(205, 205, 205);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
 .body {
     background-color: #e5e6e8;
     font-family: "Poppins", sans-serif;

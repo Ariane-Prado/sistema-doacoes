@@ -1,7 +1,9 @@
 import {FaUser, FaLock} from "react-icons/fa";
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import { useState } from "react";
 import "./Login.css";
-//<img src="/ImagemWELCOME.jpg" alt="Logo DoAção" className="logo" />
+import LogoWelcome from "../assets/ImagemWELCOME.jpg";
 
 
 const Login = () => {
@@ -51,11 +53,12 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
+    <div className="App">
+      <div className="container">
       <form onSubmit={handleSubmit}>
         <div className="logo-container">
           {/* A IMAGEM deve ficar DENTRO do componente, aqui no JSX */}
-          <img src="/ImagemWELCOME.jpg" alt="Logo DoAção" className="logo" />
+          <img src={LogoWelcome} alt="Logo DoAção" className="logo" />
         </div>
 
         <h1>Welcome to DoAção</h1>
@@ -94,8 +97,19 @@ const Login = () => {
           Need an account?<a href="#"> Sign Up</a>
         </div>
       </form>
+      </div>
     </div>
   );
 };
 
 export default Login;
+
+// Mount when used as entry (index.html points to this file)
+const mountPoint = document.getElementById("root");
+if (mountPoint) {
+  createRoot(mountPoint).render(
+    <StrictMode>
+      <Login />
+    </StrictMode>
+  );
+}
