@@ -1,0 +1,12 @@
+# Variáveis de ambiente (não subir pro GitHub)
+.env
+
+# Dependências (node_modules ocupa muito espaço)
+node_modules/
+
+# Logs e arquivos temporários
+npm-debug.log
+*.log
+
+# Build e distribuição (arquivos gerados automaticamente)
+dist/
