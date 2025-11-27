@@ -1,4 +1,5 @@
 import {FaUser, FaLock} from "react-icons/fa";
+import { Link } from "react-router-dom";
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { useState } from "react";
@@ -94,7 +95,7 @@ const Login = () => {
 
         <div className="recall-forget">
           <a href="#">Forgot password?</a>
-          Need an account?<a href="#"> Sign Up</a>
+          Need an account?<Link to="/signup"> Sign Up</Link>
         </div>
       </form>
       </div>
@@ -103,13 +104,4 @@ const Login = () => {
 };
 
 export default Login;
-
-// Mount when used as entry (index.html points to this file)
-const mountPoint = document.getElementById("root");
-if (mountPoint) {
-  createRoot(mountPoint).render(
-    <StrictMode>
-      <Login />
-    </StrictMode>
-  );
-}
+ 
