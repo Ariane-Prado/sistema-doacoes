@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./SignUp.css";
 import LogoWelcome from "../assets/ImagemWELCOME.jpg";
 
@@ -91,8 +91,8 @@ const SignUpOng = () => {
       <div className="card">
         <h1 className="title">Criar Conta</h1>
         <div className="toggle">
-          <a href="/signup/donor">Sou Doador</a>
-          <a href="/signup/ong" className="active">Sou ONG</a>
+          <Link to="/signup/donor">Sou Doador</Link>
+          <Link to="/signup/ong" className="active">Sou ONG</Link>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="grid">
@@ -180,7 +180,7 @@ const SignUpOng = () => {
             </button>
           </div>
           <div className="foot">
-            <a href="/">Já tem uma conta? Fazer login</a>
+            <Link to="/">Já tem uma conta? Fazer login</Link>
           </div>
         </form>
       </div>
