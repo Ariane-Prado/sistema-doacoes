@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./screens/Login.jsx";
 import SignUpDonor from "./screens/SignUpDonor.jsx";
 import SignUpOng from "./screens/SignUpOng.jsx";
+import ForgotPassword from "./screens/ForgotPassword.jsx";
 
 const App = () => (
   <BrowserRouter>
@@ -13,6 +14,8 @@ const App = () => (
       <Route path="/signup/ong" element={<SignUpOng />} />
       <Route path="/signup" element={<Navigate to="/signup/donor" replace />} />
       <Route path="*" element={<Navigate to="/" replace />} />
+      <Route path="/forgotpassword" element={<ForgotPassword/>}/>
+
     </Routes>
   </BrowserRouter>
 );

@@ -94,12 +94,12 @@ const Login = () => {
         </button>
 
         <div className="recall-forget">
-          <a href="#">Forgot password?</a>
+          <Link to="/forgotpassword">Forgot password?</Link>
           Need an account?<Link to="/signup"> Sign Up</Link>
         </div>
       </form>
       </div>
-    </div>
+    </div>  
   );
 };
 
